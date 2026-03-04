@@ -1,4 +1,4 @@
-package ed3;
+package clases;
 
 public class Clientes {
 	//Atributos--------------------------------

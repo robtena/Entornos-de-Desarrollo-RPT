@@ -1,4 +1,4 @@
-package ed3;
+package clases;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

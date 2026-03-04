@@ -1,4 +1,4 @@
-package ed3;
+package clases;
 
 import java.util.HashMap;
 import java.util.Map;
