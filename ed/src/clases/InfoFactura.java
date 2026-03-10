@@ -8,24 +8,24 @@ public class InfoFactura {
 	
 	// Constructor de una factura en tipo text------------------------------------------------------------------------------------------------------
     public String infoFacturaTexto(String idFactura, String nombreCliente, int centimosSubtotal, int centimosImpuestos, int centimosTotales) {
-        String a = "FACTURA " + idFactura + "\n";
-        String b = "FECHA " + LocalDate.now() + "\n";
-        String c = "CLIENTE " + nombreCliente + "\n";
-        String d = "SUBTOTAL " + dinero(centimosSubtotal) + "\n";
-        String e = "IMPUESTOS " + dinero(centimosImpuestos) + "\n";
-        String f = "TOTAL " + dinero(centimosTotales) + "\n";
-        return a + b + c + d + e + f;
+        String factura = "FACTURA " + idFactura + "\n";
+        String fecha = "FECHA " + LocalDate.now() + "\n";
+        String cliente = "CLIENTE " + nombreCliente + "\n";
+        String subTotal = "SUBTOTAL " + dinero(centimosSubtotal) + "\n";
+        String impuestos = "IMPUESTOS " + dinero(centimosImpuestos) + "\n";
+        String totalDinero = "TOTAL " + dinero(centimosTotales) + "\n";
+        return factura + fecha + cliente + subTotal + impuestos + totalDinero;
     }
 
     //Constructor de una factura en tipo html ---------------------------------------------------------------------------------------------------
     public String infoFacturaHtml(String idFactura, String nombreCliente, int centimosSubtotal, int centimosImpuestos, int centimosTotales) {       
-        String a = "<h1>FACTURA " + idFactura + "</h1>";
-        String b = "<p>FECHA " + LocalDate.now() + "</p>";
-        String c = "<p>CLIENTE " + nombreCliente + "</p>";
-        String d = "<p>SUBTOTAL " + dinero(centimosSubtotal) + "</p>";
-        String e = "<p>IMPUESTOS " + dinero(centimosImpuestos) + "</p>";
-        String f = "<p>TOTAL " + dinero(centimosTotales) + "</p>";
-        return a + b + c + d + e + f;
+        String factura = "<h1>FACTURA " + idFactura + "</h1>";
+        String fecha = "<p>FECHA " + LocalDate.now() + "</p>";
+        String cliente = "<p>CLIENTE " + nombreCliente + "</p>";
+        String subTotal = "<p>SUBTOTAL " + dinero(centimosSubtotal) + "</p>";
+        String impuestos = "<p>IMPUESTOS " + dinero(centimosImpuestos) + "</p>";
+        String totalDinero = "<p>TOTAL " + dinero(centimosTotales) + "</p>";
+        return factura + fecha + cliente + subTotal + impuestos + totalDinero;
     }
 
 	// ============================= MÉTODOS ======================================
